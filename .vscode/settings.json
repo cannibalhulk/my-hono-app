@@ -1,0 +1,7 @@
+{
+  "deno.enablePaths": [
+    "./server"
+  ],
+  "deno.enable": true,
+  "editor.inlayHints.enabled": "off"
+}

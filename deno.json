@@ -1,0 +1,25 @@
+{
+  "imports": {
+    "hono": "jsr:@hono/hono@^4.4.2",
+    "@hono/zod-validator": "npm:@hono/zod-validator",
+    "zod": "https://deno.land/x/zod/mod.ts"
+  },
+  "tasks": {
+    "start": "deno run --watch --allow-net --allow-read ./server/main.ts"
+  },
+  "lint": {
+    "include": ["./server"]
+  },
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "jsxImportSource": "react"
+  },
+  "deploy": {
+    "project": "fa22bcbe-8b5d-4b58-89e6-967e2fa90ffc",
+    "exclude": [
+      "**/node_modules"
+    ],
+    "include": [],
+    "entrypoint": "./server/main.ts"
+  }
+}
